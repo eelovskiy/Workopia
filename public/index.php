@@ -1,4 +1,6 @@
 <?php
-require_once '../helpers.php';
+require '../helpers.php';
 
-require_once basePath('views/home.view.php');
+$uri = $_SERVER['REQUEST_URI'];
+
+require basePath('router.php');
